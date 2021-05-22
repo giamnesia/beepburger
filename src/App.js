@@ -17,14 +17,13 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/pizza" component={Pizza} />
-          <Route path="/burger" component={Burger} />
-          <Route path="/fries" component={Fries} />
-          <Route path="/chicken" component={Chicken} />
-          <Route path="/combo" component={Combo} />
-        </Switch>
+        <Route path="/beepburger" component={Main} />
+
+        <Route path="/pizza" component={Pizza} />
+        <Route path="/burger" component={Burger} />
+        <Route path="/fries" component={Fries} />
+        <Route path="/chicken" component={Chicken} />
+        <Route path="/combo" component={Combo} />
       </Router>
 
       <a href="#nav">

@@ -24,8 +24,6 @@ const Main = () => {
   return (
     
     <div className='main'>
-      
-        
          <div className="hero">
         
         <div className="text" data-aos="fade-up">
