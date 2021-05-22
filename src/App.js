@@ -16,9 +16,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Route path="/" component={Main} />
-
+        <Route path="/" component={Navbar} />
+        <Route path="/beepburger" exact component={Main} />
         <Route path="/pizza" component={Pizza} />
         <Route path="/burger" component={Burger} />
         <Route path="/fries" component={Fries} />
