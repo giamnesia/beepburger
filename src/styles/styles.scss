@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+@mixin flexStart($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: $direction;
+}
+$blackColor: #030303;
+$yellowColor: #ffc839;
+$textColor: brown;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  overflow: hidden;
+}
+.main {
+  .hero {
+    display: grid;
+    grid-template-columns: 70% 0%;
+    flex-wrap: wrap;
+    height: 60vh;
+    background-color: $yellowColor;
+    color: $blackColor;
+    .image {
+      @include flexCenter(row);
+      .burger {
+        position: absolute;
+        margin: 20px 0px;
+      }
+      .cola {
+        margin-left: 150px;
+      }
+    }
+    .text {
+      font-family: "Open Sans", sans-serif;
+      @include flexCenter(column);
+
+      h3 {
+        margin: 0;
+        font-size: 30px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 50px;
+      }
+      h4 {
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .icons {
+    padding: 10px;
+    margin: 50px 0;
+    -webkit-tap-highlight-color: transparent;
+
+    h1 {
+      text-align: center;
+      margin: 20px;
+    }
+    ul {
+      @include flexCenter(row);
+      flex-wrap: wrap;
+
+      li {
+        padding: 20px;
+        margin: 10px;
+        width: 80px;
+        height: 80px;
+        color: black;
+        list-style: none;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navbar {
+  background-color: $blackColor;
+  nav {
+    ul {
+      @include flexStart(row);
+      -webkit-tap-highlight-color: transparent;
+      li {
+        list-style: none;
+        color: $yellowColor;
+        padding: 15px;
+        img {
+          width: 35px;
+        }
+      }
+      .home {
+        margin-right: 10px;
+        color: $yellowColor;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.dropdown {
+  div.item {
+    padding: 10px;
+    color: black;
+  }
+}
+.location {
+  text-align: center;
+  margin: 10px;
+  @include flexCenter(column);
+  flex-wrap: wrap;
+  .images {
+    img.ui.image {
+      margin: 10px;
+    }
+  }
+}
+
+.social {
+  @include flexCenter(column);
+  background-color: $blackColor;
+  color: white;
+
+  .title {
+    margin: 15px;
+  }
+  .links {
+    @include flexCenter(row);
+    margin: 0px;
+    a {
+      padding: 20px;
+      color: white;
+    }
+  }
+}
+.resto {
+  @include flexCenter(row);
+  flex-wrap: wrap;
+
+  .cardresto {
+    position: relative;
+    margin: 10px;
+    &:hover {
+      filter: blur(0px) brightness(1.3);
+    }
+    img {
+      filter: blur(1px) brightness(0.5);
+      width: 300px;
+      border-radius: 20px 0 20px 0;
+    }
+    .overlay {
+      position: absolute;
+      color: white;
+      top: 0;
+      padding: 20px;
+    }
+  }
+}
+
+.burgers {
+  margin: 20px;
+  h1 {
+    text-align: center;
+  }
+  .cards {
+    @include flexCenter(row);
+  }
+}
+
+.fries {
+  margin: 20px;
+  h1 {
+    text-align: center;
+  }
+}
+
+.chicken {
+  margin: 20px;
+  h1 {
+    text-align: center;
+  }
+}
+
+.pizza {
+  margin: 20px;
+  h1 {
+    text-align: center;
+  }
+}
+.combo {
+  margin: 20px;
+  h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    .hero {
+      grid-template-columns: none;
+      height: 80vh;
+      .image {
+        .burger {
+        }
+      }
+    }
+  }
+}

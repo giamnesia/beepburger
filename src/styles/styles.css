@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  overflow: hidden;
+}
+
+.main .hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 0%;
+      grid-template-columns: 70% 0%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 60vh;
+  background-color: #ffc839;
+  color: #030303;
+}
+
+.main .hero .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main .hero .image .burger {
+  position: absolute;
+  margin: 20px 0px;
+}
+
+.main .hero .image .cola {
+  margin-left: 150px;
+}
+
+.main .hero .text {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .hero .text h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.main .hero .text h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.main .hero .text h4 {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.main .icons {
+  padding: 10px;
+  margin: 50px 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.main .icons h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.main .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .icons ul li {
+  padding: 20px;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  color: black;
+  list-style: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #030303;
+}
+
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar nav ul li {
+  list-style: none;
+  color: #ffc839;
+  padding: 15px;
+}
+
+.navbar nav ul li img {
+  width: 35px;
+}
+
+.navbar nav ul .home {
+  margin-right: 10px;
+  color: #ffc839;
+}
+
+.navbar nav ul .home:hover {
+  color: white;
+}
+
+.dropdown div.item {
+  padding: 10px;
+  color: black;
+}
+
+.location {
+  text-align: center;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.location .images img.ui.image {
+  margin: 10px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #030303;
+  color: white;
+}
+
+.social .title {
+  margin: 15px;
+}
+
+.social .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0px;
+}
+
+.social .links a {
+  padding: 20px;
+  color: white;
+}
+
+.resto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.resto .cardresto {
+  position: relative;
+  margin: 10px;
+}
+
+.resto .cardresto:hover {
+  -webkit-filter: blur(0px) brightness(1.3);
+          filter: blur(0px) brightness(1.3);
+}
+
+.resto .cardresto img {
+  -webkit-filter: blur(1px) brightness(0.5);
+          filter: blur(1px) brightness(0.5);
+  width: 300px;
+  border-radius: 20px 0 20px 0;
+}
+
+.resto .cardresto .overlay {
+  position: absolute;
+  color: white;
+  top: 0;
+  padding: 20px;
+}
+
+.burgers {
+  margin: 20px;
+}
+
+.burgers h1 {
+  text-align: center;
+}
+
+.burgers .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fries {
+  margin: 20px;
+}
+
+.fries h1 {
+  text-align: center;
+}
+
+.chicken {
+  margin: 20px;
+}
+
+.chicken h1 {
+  text-align: center;
+}
+
+.pizza {
+  margin: 20px;
+}
+
+.pizza h1 {
+  text-align: center;
+}
+
+.combo {
+  margin: 20px;
+}
+
+.combo h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .hero {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    height: 80vh;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Main from "./components/Main";
+import Pizza from "./components/Pizza";
+import Burger from "./components/Burger";
+import Fries from "./components/Fries";
+import Chicken from "./components/Chicken";
+import Combo from "./components/Combo";
+import Navbar from "./components/Navbar";
+import "./styles/styles.css";
+import { FaArrowCircleUp } from "react-icons/fa";
+import "semantic-ui-css/semantic.min.css";
+import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Route path="/" exact component={Main} />
+        <Switch>
+          <Route path="/pizza" component={Pizza} />
+          <Route path="/burger" component={Burger} />
+          <Route path="/fries" component={Fries} />
+          <Route path="/chicken" component={Chicken} />
+          <Route path="/combo" component={Combo} />
+        </Switch>
+      </Router>
+
+      <a href="#nav">
+        <FaArrowCircleUp className="arrow" />
+      </a>
     </div>
   );
 }
