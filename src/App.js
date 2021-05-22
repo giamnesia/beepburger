@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Route path="/beepburger" component={Main} />
+        <Route path="/" component={Main} />
 
         <Route path="/pizza" component={Pizza} />
         <Route path="/burger" component={Burger} />

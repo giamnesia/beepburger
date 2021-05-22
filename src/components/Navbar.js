@@ -8,12 +8,12 @@ const DropdownExampleClearable = () => (
   <div className="navbar">
     <nav id="nav">
       <ul>
-        <Link to="beepburger">
+        <Link to="/">
           <li className="logo">
             <img src={Logo}></img>
           </li>
         </Link>
-        <Link to="beepburger">
+        <Link to="/">
           <Breadcrumb className="home">
             <Breadcrumb.Section>HOME</Breadcrumb.Section>
             <Breadcrumb.Divider />
