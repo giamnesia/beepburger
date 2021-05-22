@@ -26,7 +26,7 @@ const items = [
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
   return <Card.Group data-aos="fade-up" items={items} />;

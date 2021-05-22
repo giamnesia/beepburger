@@ -7,22 +7,25 @@ import Chicken from "./components/Chicken";
 import Combo from "./components/Combo";
 import Navbar from "./components/Navbar";
 import "./styles/styles.css";
-import { FaArrowCircleUp } from "react-icons/fa";
-import "semantic-ui-css/semantic.min.css";
 import { Link } from "react-router-dom";
+import { FaArrowCircleUp } from "react-icons/fa";
+import { Button } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" component={Navbar} />
-        <Route path="/beepburger" exact component={Main} />
-        <Route path="/pizza" component={Pizza} />
-        <Route path="/burger" component={Burger} />
-        <Route path="/fries" component={Fries} />
-        <Route path="/chicken" component={Chicken} />
-        <Route path="/combo" component={Combo} />
+        <Navbar />
+        <Switch>
+          <Route path="/main" component={Main} />
+          <Route path="/pizza" component={Pizza} />
+          <Route path="/burger" component={Burger} />
+          <Route path="/fries" component={Fries} />
+          <Route path="/chicken" component={Chicken} />
+          <Route path="/combo" component={Combo} />
+        </Switch>
       </Router>
 
       <a href="#nav">

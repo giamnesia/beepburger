@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Social from './Social'
 import About from './About'
 import Location from './Location'
