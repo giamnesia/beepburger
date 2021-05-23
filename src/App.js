@@ -19,12 +19,12 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/main" component={Main} />
-          <Route path="/pizza" component={Pizza} />
-          <Route path="/burger" component={Burger} />
-          <Route path="/fries" component={Fries} />
-          <Route path="/chicken" component={Chicken} />
-          <Route path="/combo" component={Combo} />
+          <Route path="/beepburger" exact component={Main} />
+          <Route path="/beepburger/pizza" exact component={Pizza} />
+          <Route path="/beepburger/burger" exact component={Burger} />
+          <Route path="/beepburger/fries" exact component={Fries} />
+          <Route path="/beepburger/chicken" exact component={Chicken} />
+          <Route path="/beepburger/combo" exact component={Combo} />
         </Switch>
       </Router>
 

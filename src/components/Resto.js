@@ -15,7 +15,7 @@ const Resto = () => {
   }, []);
   return (
     <div className="resto">
-      <Link to="burger">
+      <Link to="/beepburger/burger">
         <div className="cardresto" data-aos="fade-up" data-aos-duration="800">
           <img src={Resto1} />
           <div className="overlay">
@@ -29,7 +29,7 @@ const Resto = () => {
           </div>
         </div>
       </Link>
-      <Link to="fries">
+      <Link to="/beepburger/fries">
         <div className="cardresto" data-aos="fade-up" data-aos-duration="900">
           <img src={Resto2} />
           <div className="overlay">
@@ -43,7 +43,7 @@ const Resto = () => {
           </div>
         </div>
       </Link>
-      <Link to="pizza">
+      <Link to="/beepburger/pizza">
         <div className="cardresto" data-aos="fade-up" data-aos-duration="1000">
           <img src={Resto3} />
           <div className="overlay">
