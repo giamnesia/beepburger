@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+This project is still on progress: I will edit/compress pictures (png) for better performance of website.
+> Issue: Slow loading of pictures
+
+> Issue: Will update the AOS animation
+
+> Issue: Will eradicate unnecessary images and input
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
