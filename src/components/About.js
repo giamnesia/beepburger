@@ -1,8 +1,5 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
-import AOS from "aos";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
 
 const items = [
   {
@@ -24,12 +21,7 @@ const items = [
 ];
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-  return <Card.Group data-aos="fade-up" items={items} />;
+  return <Card.Group items={items} />;
 };
 
 export default About;

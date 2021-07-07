@@ -8,12 +8,12 @@ const DropdownExampleClearable = () => (
   <div className="navbar">
     <nav id="nav">
       <ul>
-        <Link to="/beepburger">
+        <Link to="/">
           <li className="logo">
             <img src={Logo}></img>
           </li>
         </Link>
-        <Link to="/beepburger">
+        <Link to="/">
           <Breadcrumb className="home">
             <Breadcrumb.Section>HOME</Breadcrumb.Section>
             <Breadcrumb.Divider />
@@ -26,20 +26,20 @@ const DropdownExampleClearable = () => (
           style={{ width: "25px" }}
         >
           <Dropdown.Menu>
-            <Link to="/beepburger/pizza">
+            <Link to="pizza">
               <Dropdown.Item>Pizza</Dropdown.Item>
             </Link>
-            <Link to="/beepburger/burger">
+            <Link to="burger">
               <Dropdown.Item>Burger</Dropdown.Item>
             </Link>
-            <Link to="/beepburger/fries">
+            <Link to="fries">
               <Dropdown.Item>Fries</Dropdown.Item>
             </Link>
 
-            <Link to="/beepburger/chicken">
+            <Link to="chicken">
               <Dropdown.Item>Chicken</Dropdown.Item>
             </Link>
-            <Link to="/beepburger/combo">
+            <Link to="combo">
               <Dropdown.Item>Combo</Dropdown.Item>
             </Link>
           </Dropdown.Menu>

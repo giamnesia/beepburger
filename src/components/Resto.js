@@ -30,7 +30,7 @@ const Resto = () => {
         </div>
       </Link>
       <Link to="/beepburger/fries">
-        <div className="cardresto" data-aos="fade-up" data-aos-duration="900">
+        <div className="cardresto" data-aos="fade-up" data-aos-duration="800">
           <img src={Resto2} />
           <div className="overlay">
             <h2>French Fries</h2>
@@ -44,7 +44,7 @@ const Resto = () => {
         </div>
       </Link>
       <Link to="/beepburger/pizza">
-        <div className="cardresto" data-aos="fade-up" data-aos-duration="1000">
+        <div className="cardresto" data-aos="fade-up" data-aos-duration="800">
           <img src={Resto3} />
           <div className="overlay">
             <h2>Pepperoni Pizza</h2>
